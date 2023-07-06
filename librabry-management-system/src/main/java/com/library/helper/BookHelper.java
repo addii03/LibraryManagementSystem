@@ -25,6 +25,7 @@ public class BookHelper {
 		if (bookRequest.getBid() != null) {
 			book = this.bookRepository.findById(bookRequest.getBid())
 					.orElseThrow(() -> new RuntimeException("Book is not found"));
+			System.out.println("Rohit");
 		}
 //		if(bookRepository.existsBookByBname(bookRequest.getBname())) {
 //			throw new RuntimeException("Bname found ");
